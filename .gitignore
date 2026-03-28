@@ -1,0 +1,20 @@
+# Logs
+setup_error.log
+*.log
+
+# System
+.DS_Store
+Thumbs.db
+
+# Python & Build
+**/venv/
+**/__pycache__/
+*.egg-info/
+dist/
+build/
+
+# Security & Captures
+*.pcap
+*.cap
+known_hosts
+.env
