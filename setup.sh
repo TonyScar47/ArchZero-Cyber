@@ -91,7 +91,7 @@ fi
 echo -e "${GREEN}[*] Installing Tools...${NC}"
 # Define the list of tools (including Firefox)
 ALL_TOOLS=(
-    code firefox python python-pip fastfetch 
+    firefox python python-pip fastfetch 
     virtualbox-guest-utils docker docker-compose cmake curl tmux zip unzip
     man-db man-pages sqlmap seclists jq burpsuite nmap
     wireshark-qt tcpdump bind-tools john hashcat gdb strace 
@@ -100,7 +100,7 @@ ALL_TOOLS=(
 pacman -S --needed --noconfirm "${ALL_TOOLS[@]}"
 
 # Install tools from AUR using yay
-sudo -u "$REAL_USER" yay -S --noconfirm ngrok
+sudo -u "$REAL_USER" yay -S --needed --noconfirm ngrok visual-studio-code-bin
 
 # Environment Setup & Permissions
 echo -e "${GREEN}[*] Setting up environment and permissions...${NC}"
